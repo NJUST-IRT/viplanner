@@ -666,173 +666,6 @@ Visualization Manager:
       Value: false
     - Class: rviz/Group
       Displays:
-        - Class: rviz/Group
-          Displays:
-            - Alpha: 1
-              Class: kindr_rviz_plugins/VectorAtPosition
-              Color: 0; 0; 0
-              Enabled: true
-              History Length: 1
-              Length scale: 0.10000000149011612
-              Name: Desired Torque
-              Queue Size: 10
-              Show text: true
-              Topic: /loco/cfd/distVirtualTorqueInBaseFrameAtBase
-              Unreliable: false
-              Value: true
-              Width scale: 0.30000001192092896
-            - Alpha: 1
-              Class: kindr_rviz_plugins/VectorAtPosition
-              Color: 0; 0; 0
-              Enabled: true
-              History Length: 1
-              Length scale: 0.0020000000949949026
-              Name: Desired Force
-              Queue Size: 10
-              Show text: true
-              Topic: /loco/cfd/distVirtualForceInBaseFrameAtBase
-              Unreliable: false
-              Value: true
-              Width scale: 0.30000001192092896
-          Enabled: true
-          Name: Virtual Model Control
-        - Class: rviz/Group
-          Displays:
-            - Alpha: 1
-              Class: kindr_rviz_plugins/VectorAtPosition
-              Color: 0; 0; 0
-              Enabled: true
-              History Length: 1
-              Length scale: -0.004999999888241291
-              Name: Left Fore Foot
-              Queue Size: 10
-              Show text: true
-              Topic: /loco/cfd/leftForeLeg/desContactForceAtFoot
-              Unreliable: false
-              Value: true
-              Width scale: 0.30000001192092896
-            - Alpha: 1
-              Class: kindr_rviz_plugins/VectorAtPosition
-              Color: 0; 0; 0
-              Enabled: true
-              History Length: 1
-              Length scale: -0.004999999888241291
-              Name: Right Fore Foot
-              Queue Size: 10
-              Show text: true
-              Topic: /loco/cfd/rightForeLeg/desContactForceAtFoot
-              Unreliable: false
-              Value: true
-              Width scale: 0.30000001192092896
-            - Alpha: 1
-              Class: kindr_rviz_plugins/VectorAtPosition
-              Color: 0; 0; 0
-              Enabled: true
-              History Length: 1
-              Length scale: -0.004999999888241291
-              Name: Left Hind Foot
-              Queue Size: 10
-              Show text: true
-              Topic: /loco/cfd/leftHindLeg/desContactForceAtFoot
-              Unreliable: false
-              Value: true
-              Width scale: 0.30000001192092896
-            - Alpha: 1
-              Class: kindr_rviz_plugins/VectorAtPosition
-              Color: 0; 0; 0
-              Enabled: true
-              History Length: 1
-              Length scale: -0.004999999888241291
-              Name: Right Hind Foot
-              Queue Size: 10
-              Show text: true
-              Topic: /loco/cfd/rightHindLeg/desContactForceAtFoot
-              Unreliable: false
-              Value: true
-              Width scale: 0.30000001192092896
-          Enabled: true
-          Name: Contact Force Distribution
-        - Class: rviz/Group
-          Displays:
-            - Alpha: 1
-              Class: kindr_rviz_plugins/VectorAtPosition
-              Color: 255; 0; 0
-              Enabled: true
-              History Length: 1
-              Length scale: 0.5
-              Name: Desired Torso Linear Velocity
-              Queue Size: 10
-              Show text: true
-              Topic: /loco_ros/desired_torso_linear_velocity
-              Unreliable: false
-              Value: true
-              Width scale: 0.20000000298023224
-            - Alpha: 1
-              Class: kindr_rviz_plugins/VectorAtPosition
-              Color: 255; 85; 0
-              Enabled: true
-              History Length: 1
-              Length scale: 0.5
-              Name: Desired Torso Angular Velocity
-              Queue Size: 10
-              Show text: true
-              Topic: /loco_ros/desired_torso_angular_velocity
-              Unreliable: false
-              Value: true
-              Width scale: 0.20000000298023224
-            - Alpha: 1
-              Class: kindr_rviz_plugins/VectorAtPosition
-              Color: 0; 85; 255
-              Enabled: true
-              History Length: 1
-              Length scale: 0.20000000298023224
-              Name: Desired Torso Linear Acceleration
-              Queue Size: 10
-              Show text: true
-              Topic: /loco_ros/desired_torso_acceleration
-              Unreliable: false
-              Value: true
-              Width scale: 0.20000000298023224
-            - Alpha: 1
-              Class: kindr_rviz_plugins/VectorAtPosition
-              Color: 0; 255; 0
-              Enabled: true
-              History Length: 1
-              Length scale: 0.5
-              Name: Commanded Torso Linear Velocity
-              Queue Size: 10
-              Show text: true
-              Topic: /loco_ros/commanded_torso_linear_velocity
-              Unreliable: false
-              Value: true
-              Width scale: 0.20000000298023224
-            - Alpha: 1
-              Class: kindr_rviz_plugins/VectorAtPosition
-              Color: 0; 255; 0
-              Enabled: true
-              History Length: 1
-              Length scale: 0.5
-              Name: Commanded Torso Angular Velocity
-              Queue Size: 10
-              Show text: true
-              Topic: /loco_ros/commanded_torso_angular_velocity
-              Unreliable: false
-              Value: true
-              Width scale: 0.20000000298023224
-            - Class: rviz/MarkerArray
-              Enabled: true
-              Marker Topic: /loco_ros/torso
-              Name: Torso
-              Namespaces:
-                {}
-              Queue Size: 100
-              Value: true
-          Enabled: true
-          Name: Torso
-      Enabled: false
-      Name: Locomotion Controller
-    - Class: rviz/Group
-      Displays:
         - Alpha: 0.5
           Class: rviz/RobotModel
           Collision Enabled: false
@@ -1697,16 +1530,12 @@ Visualization Manager:
     - Class: rviz/PublishPoint
       Single click: true
       Topic: /clicked_point
-    - Class: center_frame_tool/CenterFrameTool
-      Frame: base
-    - Class: gazebo_play_tool/GazeboPlayTool
-    - Class: rviz_gazebo_interaction/RobotRespawner
     - Class: rviz/WaypointTool
       Topic: waypoint
   Value: true
   Views:
     Current:
-      Class: rviz/IsaacLab
+      Class: rviz/Orbit
       Distance: 19.056943893432617
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
@@ -1747,7 +1576,7 @@ Visualization Manager:
         Pitch: 0.8103983402252197
         Target Frame: base
         Yaw: 2.7153992652893066
-      - Class: rviz/IsaacLab
+      - Class: rviz/Orbit
         Distance: 14.963652610778809
         Enable Stereo Rendering:
           Stereo Eye Separation: 0.05999999865889549
@@ -1762,7 +1591,7 @@ Visualization Manager:
         Focal Shape Fixed Size: true
         Focal Shape Size: 0.05000000074505806
         Invert Z Axis: false
-        Name: IsaacLab
+        Name: Orbit
         Near Clip Distance: 0.009999999776482582
         Pitch: 0.9653983116149902
         Target Frame: base

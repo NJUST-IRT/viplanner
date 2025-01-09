@@ -1,8 +1,8 @@
 <launch>
-    <arg name="config_viplanner"      default="anymal_mount"/>
+    <arg name="config_viplanner"      default="anymal_c"/>
     <arg name="use_path_follow"       default="true"/>
-    <arg name="enable_visualization"  default="false"/>
-    <arg name="enable_smart_joystick" default="false"/>
+    <arg name="enable_visualization"  default="true"/>
+    <arg name="enable_smart_joystick" default="true"/>
 
     <group if="$(arg use_path_follow)">
         <include file="$(find path_follower)/launch/path_follower.launch" />

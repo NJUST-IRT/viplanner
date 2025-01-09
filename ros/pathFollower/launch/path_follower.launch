@@ -2,7 +2,7 @@
 
   <arg name="odomTopic" default="/state_estimator/pose_in_odom"/>
   <arg name="commandTopic" default="/local_guidance_path_follower/twist"/>
-  <arg name="baseFrame" default="base"/>
+  <arg name="baseFrame" default="odom"/>
 
   <arg name="trackingDis" default="0.25"/>
   <arg name="sensorOffsetX" default="0.4"/>

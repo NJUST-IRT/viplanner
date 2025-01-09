@@ -746,6 +746,7 @@ class VIPlannerNode:
             sem_msg.format = "jpeg"
             sem_msg.data = np.array(compressed_image).tostring()
             self.m2f_pub.publish(sem_msg)
+            print("Published semantic image")
         return
 
     def semPrediction(self, image):

@@ -28,7 +28,7 @@ class Mask2FormerInference:
         checkpoint_file="model_final.pth",
     ) -> None:
         # Build the model from a config file and a checkpoint file
-        self.model = init_detector(config_file, checkpoint_file, device="cuda:0")
+        self.model = init_detector(config_file, checkpoint_file, device="cpu")
 
         # mapping from coco class id to viplanner class id and color
         viplanner_meta = VIPlannerSemMetaHandler()

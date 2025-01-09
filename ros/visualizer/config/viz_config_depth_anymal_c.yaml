@@ -5,11 +5,11 @@ domain:                 depth
 
 # ros topics
 vizTopic:               /viplanner/viz_path_depth
-imgTopic:               /depth_camera_front/depth/image_rect_raw
-infoTopic:              /depth_camera_front/depth/camera_info
+imgTopic:               /camera/depth/image_rect_raw
+infoTopic:              /camera/depth/camera_info
 goalTopic:              /mp_waypoint
 pathTopic:              /viplanner/path
 
 # frame ids
-robot_frame:            base
+robot_frame:            odom
 odom_frame:             odom

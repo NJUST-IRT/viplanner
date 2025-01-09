@@ -52,9 +52,9 @@ class VIPlannerInference:
                 k=self.train_cfg.knodes,
             )
         try:
-            model_state_dict, _ = torch.load(model_path)
+            model_state_dict, _ = torch.load(model_path, map_location=torch.device('cpu'))
         except ValueError:
-            model_state_dict = torch.load(model_path)
+            model_state_dict = torch.load(model_path, map_location=torch.device('cpu'))
         self.net.load_state_dict(model_state_dict)
 
         # inference script = no grad for model
