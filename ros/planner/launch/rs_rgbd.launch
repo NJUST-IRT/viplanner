@@ -202,7 +202,8 @@ Processing enabled by this node:
 
   </group>
 
-  <node pkg="tf" type="static_transform_publisher" name="static_transform_publisher_color" args="0.0 0.0 0.0 0.0 0.0 0.0 odom camera_color_optical_frame 100" />
-  <node pkg="tf" type="static_transform_publisher" name="static_transform_publisher_depth" args="0.0 0.0 0.0 0.0 0.0 0.0 odom camera_depth_optical_frame 100" />
+  <node pkg="tf" type="static_transform_publisher" name="static_transform_publisher_color" args="0.0 0.0 0.0 1.57 3.14 1.57 odom camera_color_optical_frame 100" />
+  <node pkg="tf" type="static_transform_publisher" name="static_transform_publisher_depth" args="0.0 0.0 0.0 1.57 3.14 1.57 odom camera_depth_optical_frame 100" />
+  <node pkg="tf" type="static_transform_publisher" name="static_transform_publisher_base" args="0.0 0.0 0.0 0.0 0.0 0.0 odom base 100" />
 
 </launch>
