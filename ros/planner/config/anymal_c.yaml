@@ -8,8 +8,8 @@ depth_zero_ratio_thres: 0.6
 # network model
 model_save:             models
 # mmdet
-m2f_model_path:         models/mask2former_r50_lsj_8x2_50e_coco-panoptic_20220326_224516-11a44721.pth
-m2f_cfg_file:           /home/second_self_dog/.local/lib/python3.8/site-packages/mmdet/.mim/configs/mask2former/mask2former_r50_8xb2-lsj-50e_coco-panoptic.py
+m2f_model_path:         models/mask2former_r50_8xb2-lsj-50e_coco-panoptic_20230118_125535-54df384a.pth
+m2f_cfg_file:           /home/${USER}/.local/lib/python3.8/site-packages/mmdet/.mim/configs/mask2former/mask2former_r50_8xb2-lsj-50e_coco-panoptic.py
 
 # ros topics
 depth_topic:            /camera/depth/image_rect_raw
@@ -22,7 +22,7 @@ m2f_timer_topic:        /viplanner/m2f_timer
 depth_uint_type:        True
 compressed:             True
 # frame ids
-robot_id:               odom  # also adjust in path_follower.launch
+robot_id:               base  # also adjust in path_follower.launch
 world_id:               odom
 # fear reaction
 is_fear_act:            False

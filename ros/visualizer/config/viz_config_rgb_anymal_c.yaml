@@ -11,5 +11,5 @@ goalTopic:              /mp_waypoint
 pathTopic:              /viplanner/path
 
 # frame ids
-robot_frame:            odom
+robot_frame:            base
 odom_frame:             odom

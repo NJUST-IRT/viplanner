@@ -34,9 +34,9 @@ dependencies = [
 
 [project.optional-dependencies]
 inference = [
-    "mmcv==2.0.0",
-    "mmengine",
-    "mmdet",
+    "mmcv==2.1.0",
+    "mmengine==0.8.4",
+    "mmdet==3.2.0",
 ]
 standard = [
     "pypose",
